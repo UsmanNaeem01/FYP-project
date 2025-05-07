@@ -11,7 +11,7 @@ from PIL import Image
 import io
 
 # Load the model once
-model = load_model("autoencoder_model.h5")
+model = load_model("autoencoder_model.h5", compile=False)
 
 # Set the threshold (example: adjust according to your real training results)
 THRESHOLD = 0.015  # Replace this with your actual threshold

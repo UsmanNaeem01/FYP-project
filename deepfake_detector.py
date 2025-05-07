@@ -14,7 +14,7 @@ import io
 model = load_model("autoencoder_model.h5", compile=False)
 
 # Set the threshold (example: adjust according to your real training results)
-THRESHOLD = 0.0015  # Replace this with your actual threshold
+THRESHOLD = 0.015  # Replace this with your actual threshold
 
 def preprocess_image(uploaded_file, image_size=224):
     image = Image.open(uploaded_file).convert("RGB")
